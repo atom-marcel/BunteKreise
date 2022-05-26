@@ -18,7 +18,6 @@ sim_window = pygame.display.set_mode((window_x, window_y))
 clock = pygame.time.Clock()
 
 p = Point((window_x / 2) + 5, (window_y / 2) + 0, window_x / 2, window_y / 2)
-p2 = Point(p.position.x + 5, p.position.y + 0, p.position.x, p.position.y)
 
 j = 1
 r = 5
