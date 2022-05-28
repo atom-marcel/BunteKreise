@@ -2,7 +2,7 @@
 # @Date:   2022-05-26T11:26:45+02:00
 # @Email:  marcelmaluta@gmail.com
 # @Last modified by:   Marcel Maluta
-# @Last modified time: 2022-05-26T13:14:54+02:00
+# @Last modified time: 2022-05-28T11:38:48+02:00
 
 
 
@@ -23,8 +23,9 @@ j = 1
 r = 5
 r_inc = 2
 j_inc = 1
+mult = random.uniform(0.1, 6)
 
-resolution = 32
+resolution = 8
 phi = math.pi / resolution
 
 while True:
@@ -34,7 +35,7 @@ while True:
                 pygame.quit()
 
     clock.tick(20)
-    phi = (j * math.pi) / resolution
+    phi = ((j * math.pi) / resolution) * mult
     p.polar_move(r, phi)
     p.draw(sim_window)
     j += j_inc
@@ -44,4 +45,6 @@ while True:
         r = 5
         j = -1
         j_inc *= -1
+        resolution = random.randrange(6, 50)
+        mult = random.uniform(0.1, 6)
         sim_window.fill((0, 0, 0))

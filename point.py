@@ -2,7 +2,7 @@
 # @Date:   2022-05-26T11:30:17+02:00
 # @Email:  marcelmaluta@gmail.com
 # @Last modified by:   Marcel Maluta
-# @Last modified time: 2022-05-26T12:54:04+02:00
+# @Last modified time: 2022-05-28T11:24:53+02:00
 
 import pygame
 import math
